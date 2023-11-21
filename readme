@@ -1,0 +1,36 @@
+/* 
+
+rodar dentro da pasta api-de-piadas o comando: node app.js
+
+http://localhost:3000/register == colocar nome e senha que a API-Key vai ser gerada na url 
+http://localhost:3000/apikeys == dentro do postman usar o metodo POST e ele ira retornar uma API-Key, add ela no Headers : 
+  Key                Value   
+ API-Key        "colar Key gerada"   
+
+http://localhost:3000/api-docs == abrir o Swagger UI
+
+http://localhost:3000/jokes/random == sorteia uma piada aleatoria
+
+http://localhost:3000/jokes/:id-da-piada == puxa uma piada pelo id dela
+
+http://localhost:3000/jokes == exibe todas as piadas
+
+http://localhost:3000/jokes/genre/:nome-do-genero == puxa a piada pelo genero
+
+http://localhost:3000/jokes/add == add uma nova piada(utilizar o json abaixo)
+{
+  "question": "pergunta",
+  "answer": "resposta",
+  "genre": "genero"
+}
+
+http://localhost:8080/jokes/delete/:id-da-piada == deletar uma piada
+
+http://localhost:8080/jokes/edit/:id-da-piada == edita uma piada(escolher o que quer mudar, question, answer, genre ou tudo)
+{
+  "question": "pergunta",
+  "answer": "resposta",
+  "genre": "genero"
+}
+
+*/

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Obtenção da API Key</title>
+</head>
+<body>
+  <h1>Obtenção da API Key</h1>
+  <p>Seu registro foi bem-sucedido. Você pode agora obter sua API key.</p>
+  <p>Sua API key é:</p>
+  <strong id="apiKey"></strong>
+
+  <script>
+    // Captura a API key da URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const apiKey = urlParams.get('apiKey');
+    document.getElementById('apiKey').textContent = apiKey;
+    alert('Sua API key é: ' + apiKey);
+  </script>
+</body>
+</html>
